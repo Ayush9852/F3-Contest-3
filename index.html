@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1/1560.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="addSection">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <div id="priority">
+                Priority
+                <select id="selectPriority" name="priority">
+                    <option value="option" disabled selected style="display:none"></option>
+                    <option id="option1" name="priority" value="option1">High</option>
+                    <option id="option2" name="priority" value="option2">Medium</option>
+                    <option id="option3" name="priority" value="option3">Low</option>
+                </select>
+            </div>
+            <div id="deadline"><div id="dateText">Deadline</div><input type="date" id="calendar"></div>
+            <button class="btn">Add Item</button>
+        </div>
+        <div class="today list">
+            <h2>Today’s TodoList</h2>
+        </div>
+        <div class="future list">
+            <h2>Future TodoList</h2>
+        </div>
+        <div class="completed list">
+            <h2>Completed TodoList</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
